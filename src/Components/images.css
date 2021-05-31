@@ -1,0 +1,123 @@
+.img-container {
+    position: relative;
+    display: grid;
+    width: 70%;
+    align-items: center;
+    /* justify-content: center; */
+    overflow: hidden; 
+    margin: 10em auto 0;
+    background-color: rgba(255, 166, 0, 0.75);
+    border-radius: 20px;
+}
+
+.img-list {
+    /* display: grid; */
+    position: relative;
+    left: -15px;
+    justify-self: center;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.nextPic {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 45px;
+    background: rgba(36, 36, 36,0.8);
+    border-radius: 0 20px 20px 0;
+}
+
+.fa-arrow-alt-circle-right {
+    font-size: 40px;
+    color: orange;
+}
+
+.fa-arrow-alt-circle-right:hover {
+    color: rgb(190, 124, 0);
+}
+
+.previousPic {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 45px;
+    background: rgba(36, 36, 36,0.8);
+    border-radius: 20px 0 0 20px;
+}
+
+.fa-arrow-alt-circle-left {
+    font-size: 40px;
+    color: orange;
+}
+
+.fa-arrow-alt-circle-left:hover {
+    color: rgb(190, 124, 0);
+
+}
+
+/*------------------------------- Media Queries -------------------------------*/
+/* Large devices */
+@media (min-width: 992px) and (max-width:1200px) {
+    .img-container {
+        width: 80%;
+        margin: 5em auto 0;
+    }
+
+    .img-list {
+        left: 0;
+    }
+}
+
+/* medium devices */
+@media (min-width: 768px) and (max-width:992px) {
+    .img-container {
+        width: 90%;
+        margin: 5em auto 0;
+    }
+
+    .img-list {
+        left: 0;
+    }
+}
+
+/* Small Devices */
+@media (min-width: 576px) and (max-width:768px) {
+    .img-container {
+        width: 100%;
+        margin: 1em auto 0;
+    }
+
+    .img-list {
+        left: 0;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 576px){
+    .img-container {
+        width: 100%;
+        margin: 2em auto 0;
+    }
+
+    .img-list {
+        width: 100%;
+        height: 250px;
+        left: 0;
+    }
+}

@@ -1,0 +1,26 @@
+/*------------------------------- NavBar -------------------------------*/
+.navBar {
+    display: grid;
+    padding: 5px 20px;
+    grid-template-columns: auto;
+    justify-items: center;
+    align-items: center;
+    background: black;
+}
+/*------------------------------- Logo -------------------------------*/
+.logo {
+    display: flex;
+    align-items: center;
+    grid-column: 1;
+    justify-self: left;
+    cursor: default;
+}
+.logoPic {
+    width: 50px;
+    border-radius: 15px;
+}
+
+.logoName {
+    margin: 0 10px;
+    color: #fff;
+}
